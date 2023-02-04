@@ -2,7 +2,7 @@
 다음은 [마이크로서비스 아키텍처 구축 가이드]에 수록된 예제 코드에 대한 안내입니다.
 
 #### 1. 관련 프로젝트
-*	microservices-example-sql-vs-api : 
+*	microservices-example-sql-vs-api
     - 3챕터의 모놀리식 시스템과 마이크로서비스 시스템의 구현 코드
     - 테스트에 사용된 DB 스키마와 샘플 데이터를 생성하는 기능
 *	microservices-example-api-composition
@@ -11,6 +11,9 @@
     - 위 2개 프로젝트에서 연계하는 공통 서비스
 *	microservices-example-transactions
     - 7챕터의 보상 트랜잭션 관련 코드
+
+![프로젝트 관계도](https://github.com/wharup/book-examples/blob/main/%EA%B4%80%EA%B3%84%EB%8F%84.png "title") 
+
 
 #### 2. 챕터별 코드 위치
 
