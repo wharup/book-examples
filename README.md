@@ -21,8 +21,11 @@
 ##### 질문2 : REST API 참조로 속도가 나오겠어?
 모놀리식과 마이크로서비스 아키텍처의 데이터 조회 속도 비교
 *   코드 3-4 모놀리식 서비스의 데이터 조합 : MonolithServiceRequestService
+    - [MonolithServiceRequestService.findAllBySQL()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/MonolithServiceRequestService.java#L23)
 *   코드 3-7 일괄 요청 시의 데이터 조합 : ServiceRequestService
-*   코드 3-8 일괄 요청 & 로컬 캐시를 사용한 데이터 조합 : 
+    - [ServiceRequestService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestService.java#L88)
+*   코드 3-8 일괄 요청 & 로컬 캐시를 사용한 데이터 조합 :
+    - [ServiceRequestCachedService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestCachedService.java#L59)
 
 #### Chapter 7 : 서비스 개발하기	
 ##### 7.2 서비스 간 데이터 참조 가이드
