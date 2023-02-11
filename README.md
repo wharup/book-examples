@@ -25,7 +25,7 @@
 *   코드 3-7 일괄 요청 시의 데이터 조합 : ServiceRequestService
     - [ServiceRequestService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestService.java#L88)
 *   코드 3-8 일괄 요청 & 로컬 캐시를 사용한 데이터 조합 :
-    - [ServiceRequestCachedService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestCachedService.java#L59)
+    - [ServiceRequestCachedService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestCachedService.java#L121)
 
 #### Chapter 7 : 서비스 개발하기	
 ##### 7.2 서비스 간 데이터 참조 가이드
