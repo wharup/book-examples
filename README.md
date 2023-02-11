@@ -51,4 +51,9 @@
     - [CourseService.createCourseOptimisticLocking_shortTransactionSpan()](https://github.com/wharup/microservices-example-transactions/blob/0cf070bfb7736265e336cec79fb7355a80378475/src/main/java/microservices/examples/tx/course/CourseService.java#L125)
 
 
+#### 3. 기타
+자바 모듈화 규칙으로 실행 시 다음 JVM 옵션이 필요합니다.(Lombok, EhCache 관련)
+
+--illegal-access=warn --add-opens java.base/java.lang=ALL-UNNAMED
+
  
