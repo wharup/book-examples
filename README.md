@@ -25,18 +25,27 @@
 *   코드 3-7 일괄 요청 시의 데이터 조합 : ServiceRequestService
     - [ServiceRequestService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestService.java#L88)
 *   코드 3-8 일괄 요청 & 로컬 캐시를 사용한 데이터 조합 :
-    - [ServiceRequestCachedService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestCachedService.java#L121)
+    - [ServiceRequestCachedService.getCustomerNames()](https://github.com/wharup/microservices-example-sql-vs-api/blob/557390dcca7514f65a110007a94e94f064982e77/src/main/java/microservices/examples/service/ServiceRequestCachedService.java#L121)
 
 #### Chapter 7 : 서비스 개발하기	
 ##### 7.2 서비스 간 데이터 참조 가이드
 *   코드 7-3 코드 서비스의 공통 코드 조회:
+    - [CodeController.getMulti()](https://github.com/wharup/microservices-example-common-service/blob/f950beb39ec104093d4b87bbee99fb42ac04a0de/src/main/java/microservices/examples/common/CodeController.java#L31)
 *   코드 7-4 ServiceRequestService의 상담 이력 조회 메서드
+    - [ServiceRequestService.findAllWithBatchRESTApi()](https://github.com/wharup/microservices-example-api-composition/blob/26dc2de7081ef9b6c14d8e3e7bf9d45c32f7fc58/src/main/java/microservices/examples/service/ServiceRequestService.java#L67)
 *   코드 7-5 부가 정보의 조회
+    - [ServiceRequestService.get()](https://github.com/wharup/microservices-example-api-composition/blob/c5dedc12817f9667a009eca2f088de527bceeab5/src/main/java/microservices/examples/service/ServiceRequestService.java#L360)
 *   코드 7-6 CustomerGateway 클래스의 고객 이름 조회 메서드
+    - [CustomerGateway.getCustomerNames()](https://github.com/wharup/microservices-example-api-composition/blob/c5dedc12817f9667a009eca2f088de527bceeab5/src/main/java/microservices/examples/gateway/CustomerGateway.java#L66)
 *   코드 7-9 CodeGateway의 코드 이름 조회 메서드
+    - [CodeGateway.getCodeNamesByType()](https://github.com/wharup/microservices-example-api-composition/blob/c5dedc12817f9667a009eca2f088de527bceeab5/src/main/java/microservices/examples/gateway/CodeGateway.java#L134)
 *   코드 7-11 CodeGateway의 캐시 갱신 메서드
+    - [CodeGateway.loadCodeNamesIfUpdated()](https://github.com/wharup/microservices-example-api-composition/blob/c5dedc12817f9667a009eca2f088de527bceeab5/src/main/java/microservices/examples/gateway/CodeGateway.java#L50)
 *   코드 7-12 CodeGateway의 공통 코드 조회 코드
+    - [CodeGateway.getCodesIfChanged()](https://github.com/wharup/microservices-example-api-composition/blob/c5dedc12817f9667a009eca2f088de527bceeab5/src/main/java/microservices/examples/gateway/CodeGateway.java#L95)
 *   코드 7-13 공통 서비스 CodeContoller의 코드 조회 요청 처리 코드
+    - [CodeController.getMulti()](https://github.com/wharup/microservices-example-common-service/blob/f950beb39ec104093d4b87bbee99fb42ac04a0de/src/main/java/microservices/examples/common/CodeController.java#L31)
+
 
 ##### 7.3 트랜잭션 관리 : 원자성과 독립성
 
