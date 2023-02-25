@@ -1,4 +1,4 @@
-# 예제 코드
+# 예제 코드 & 그림 템플릿
 다음은 [마이크로서비스 아키텍처 구축 가이드]에 수록된 예제 코드에 대한 안내입니다.
 
 #### 1. 관련 프로젝트
@@ -68,4 +68,12 @@
 
 --illegal-access=warn --add-opens java.base/java.lang=ALL-UNNAMED
 
- 
+
+----
+다음은 그림 템플릿에 대한 안내입니다.
+
+서비스간의 동작을 표현할 때에 도움이 될 수 있도록, 책에 수록된 그림을 일부 제공합니다. 다음 문서를 열고 파일 > 사번 생성을 선택하여 필요한 용도로 사용하세요.
+
+[그림 템플릿 (구글 Docs 문서 링크)](https://docs.google.com/document/d/1l1R6QpzyoE_Lqy2juiywFTZkC22PIVCaXGllQe6oxAA/edit?usp=sharing)
+
+
